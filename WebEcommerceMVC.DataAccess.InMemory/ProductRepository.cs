@@ -20,11 +20,11 @@ namespace WebEcommerceMVC.DataAccess.InMemory
             }
         }
         public void Commit() {
-            cache["product"] = products;
+            cache["products"] = products;
         }
 
-        public void Insert() {
-            products.Add(new Product());
+        public void Insert(Product product) {
+            products.Add(product);
         }
         public void Update(Product product)
         {
